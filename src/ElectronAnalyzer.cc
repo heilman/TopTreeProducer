@@ -230,8 +230,13 @@ void ElectronAnalyzer::Process(const edm::Event& iEvent, TClonesArray* rootElect
     // Some specific methods to pat::Electron
     TLorentzVector ecalDrivenMomentum(patElectron->ecalDrivenMomentum().px(),patElectron->ecalDrivenMomentum().py(),patElectron->ecalDrivenMomentum().pz(),patElectron->ecalDrivenMomentum().energy());
     localElectron.setEcalDrivenMomentum(ecalDrivenMomentum);
+<<<<<<< HEAD
 
     //    localElectron.setdB(patElectron->dB());
+=======
+    localElectron.setIsPF(patElectron->isPF());
+    //localElectron.setdB(patElectron->dB());
+>>>>>>> e06eb322df2e4b6d2bbed7be4e34f11b7c176c64
     //localElectron.setdBError(patElectron->edB());
 
     // Matched genParticle
